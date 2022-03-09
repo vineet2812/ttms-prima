@@ -1,0 +1,30 @@
+table
+{
+
+	border:1px solid white;
+	color:white;
+	
+	
+}
+table tr td
+{
+padding:2px;
+}
+table tr th
+{
+	background-color:#268b5b;
+	color:white;
+}
+tr:nth-child(odd) {
+  background-color: #355e6a8a;
+}
+tr:nth-child(even) {
+  background-color: #201e2f;
+}
+table tr:hover
+{
+	background-color:white;
+	color:black;
+	
+	transition:1s ease;
+}

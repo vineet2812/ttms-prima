@@ -1,0 +1,43 @@
+#header
+{
+	height:100px;
+	width:100%;
+	border-bottom:2px solid Cadetblue;
+	background: #466248;
+background-image: url("../media/11.jpg");
+color: floralwhite;
+background-attachment: fixed;
+background-size: cover;
+
+}
+.logo
+{
+	position:relative;
+	float:left;
+	height:100px;
+	width:100px;
+	background-image:url("./logo.jpg");
+}
+#title-line
+{
+	position:relative;
+	float:left;
+	top:20px;
+	margin-left:10px;
+	transition:transform(0%,50%);
+	width:60%;
+	font-size:40px;
+	font-family:Calibri light;
+}
+#right-content
+{
+	height:100%;
+	width:20%;
+	overflow:auto;
+	float:right;
+	border-left:1px solid white;
+	background-color: Cadetblue;
+color: ghostwhite;
+padding-left: 10px;
+font-family: Calibri;
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<link rel="stylesheet" type="text/css" href="Time table main page.css">
+	<link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+  
+<style>
+.container {
+  position: relative;
+  width: 50%;
+  margin: 10px;
+ 
+}
+
+.container1 {
+  position: relative;
+  width: 50%;
+  margin: 10px;
+}
+
+.container2 {
+  position: relative;
+  width: 50%;
+  margin: 10px;
+}
+
+.image {
+  display:block;
+ width: 60%;
+  height: 70%;
+
+}
+
+.image1 {
+  display:block;
+ width: 60%;
+  height: 70%;
+
+}
+
+.image2 {
+  display:block;
+ width: 60%;
+  height: 70%;
+
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  opacity: 0;
+  transition: .9s ease;
+  background-color: #008CBA;
+  align-self: center;
+  margin-left: 140px;
+}
+
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  opacity: 0;
+  transition: .9s ease;
+  background-color: #008CBA;
+  align-self: center;
+  margin-left: 13px;
+}
+
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  opacity: 0;
+  transition: .9s ease;
+  background-color: #008CBA;
+  align-self: center;
+  margin-left: 930px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+
+}
+
+.container1:hover .overlay1  {
+  opacity: 1;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+
+}
+
+
+.container2:hover .overlay2  {
+  opacity: 1;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 100px;
+  width: 380px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  color: yellow;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+</style>
+</head>
+
+
+
+
+
+<body>
+	 <div class="header">
+    <table>
+      <tr>
+        <td>
+          <img src="https://images.static-collegedunia.com/public/college_data/images/logos/1500266282KNITlogo.png">
+        </td>
+        <td>
+          <p>KAMLA NEHRU INSTITUTE OF TECHNOLOGY,SULTANPUR</p>
+          
+        </td>
+      </tr>
+    </table>
+  </div>
+	     <center>
+		<h1 style="font-family:Bungee Shade;">TIMETABLE MANAGEMENT</h1>
+	     </center>
+	    
+     <center><h2 style="color: red;font-size: 30px;">HOD Control Panel</h2></center>
+
+
+     <center><div class="container">
+      
+  <img style="border-radius: 0px;margin-right: 2px;" src="http://profilepicturesdp.com/wp-content/uploads/2018/07/profile-pictures-avatars-4.png" alt="Avatar" class="image">
+  <center><div class="overlay">
+    
+    <button style="display: inline-block;
+  border-radius: 4px;
+  background-color:darkslategrey;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;margin-left: 20px;border-color: darkcyan;border-width: 5px;" onclick="myFunction()" class="dropbtn"><span>Add Class</span>
+ 
+
+</button><br>
+    
+
+
+<button style="display: inline-block;
+  border-radius: 4px;
+  background-color:darkslategrey;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;margin-left: 20px;border-color: darkcyan;border-width: 5px;margin-top: -7px;" onclick="myFunction1()" class="dropbtn1"><span>Assign Subject to Faculty</span>
+  
+</button><br>
+   
+
+
+<button style="display: inline-block;
+  border-radius: 4px;
+  background-color:darkslategrey;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width:80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;margin-left: 20px;border-color: darkcyan;border-width: 5px;margin-top: -7px;" onclick="myFunction2()" class="dropbtn2"><span>View/Remove Faculty</span>
+  
+</button>
+
+<button style="display: inline-block;
+  border-radius: 4px;
+  background-color:darkslategrey;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;margin-left: 20px;border-color: darkcyan;border-width: 5px;margin-top: -7px;" onclick="myFunction2()" class="dropbtn2"><span>View All Faculty Assigned to class</span>
+  
+</button>
+
+
+<button style="display: inline-block;
+  border-radius: 4px;
+  background-color:darkslategrey;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;margin-left: 20px;border-color: darkcyan;border-width: 5px;margin-top: -7px;" onclick="myFunction2()" class="dropbtn2"><span>View All Class Assigned to Faculty</span>
+  
+</button>
+
+  </div></center>
+</div></center>
+
+
+
+<div style="margin-right: 0px" class="container1">
+      
+  <img style="border-radius: 0px;margin-right: 2px;border:solid;margin-top:-406px;height: 393px;" src="https://cpsltd.ch/wp-content/uploads/2018/10/training.jpg" alt="Avatar" class="image1">
+<div class="overlay1">
+    
+    <button style="display: inline-block;
+  border-radius: 4px;
+  background-color:darkslategrey;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;margin-left: 35px;border-color: darkcyan;border-width: 5px;" onclick="myFunction()" class="dropbtn"><span>Add Subject</span>
+ 
+
+</button><br>
+    
+
+
+<button style="display: inline-block;
+  border-radius: 4px;
+  background-color:darkslategrey;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;margin-left: 35px;border-color: darkcyan;border-width: 5px;margin-top: -7px;" onclick="myFunction1()" class="dropbtn1"><span>View/Delete Subjects</span>
+  
+</button><br>
+</div>
+</div>
+
+ 
+
+
+<div class="container2">
+      
+  <img style="border-radius: 0px;margin-right: 2px;border:solid;height: 393px;margin-left: 927px;margin-top: -406px;" src="https://is5-ssl.mzstatic.com/image/thumb/Purple114/v4/3b/c5/15/3bc51583-b253-022b-e683-4dcb10c55957/source/512x512bb.jpg" alt="Avatar" class="image">
+<div class="overlay2">
+    
+    <button style="display: inline-block;
+  border-radius: 4px;
+  background-color:darkslategrey;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;margin-left: 35px;border-color: darkcyan;border-width: 5px;" onclick="myFunction()" class="dropbtn"><span>View Timetable Of Faculty</span>
+ 
+
+</button><br>
+    
+
+
+<button style="display: inline-block;
+  border-radius: 4px;
+  background-color:darkslategrey;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;margin-left: 35px;border-color: darkcyan;border-width: 5px;margin-top: -7px;" onclick="myFunction1()" class="dropbtn1"><span>View Timetable Of Class</span>
+  
+</button><br>
+
+
+<button style="display: inline-block;
+  border-radius: 4px;
+  background-color:darkslategrey;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;margin-left: 35px;border-color: darkcyan;border-width: 5px;margin-top: -7px;" onclick="myFunction1()" class="dropbtn1"><span>Update Timetable Of Class</span>
+  
+</button><br>
+
+
+
+<button style="display: inline-block;
+  border-radius: 4px;
+  background-color:darkslategrey;
+  
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;margin-left: 35px;border-color: darkcyan;border-width: 5px;margin-top: -7px;" onclick="myFunction1()" class="dropbtn1"><span>New Timetable</span>
+  
+</button><br>
+</div>
+</div>
+
+</body>
+</html>
